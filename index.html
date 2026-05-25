@@ -234,23 +234,56 @@ footer {
   font-size: 20px;
   color: #777;
 }
+ .navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:rgba(0,0,0,0.8);
+  z-index:999;
+  box-sizing:border-box;
+}
+
+.logo{
+  color:white;
+  font-weight:bold;
+}
+
+.menu a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+} 
 </style>
 
 </head>
 
 <body>
+<nav class="navbar">
+  <div class="logo">NORE AGENCY</div>
 
+  <div class="menu">
+    <a href="#about">Tentang</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#harga">Harga</a>
+    <a href="#portfolio">Portofolio</a>
+    <a href="#kontak">Kontak</a>
+  </div>
+</nav>
 <!-- HERO -->
 <div class="hero">
   <div class="hero-overlay">
     <h1>NORE AGENCY</h1>
     <p>Live Streaming Agency untuk UMKM & Brand</p>
-    <a class="btn">Book Now</a>
+    <a class="btn">Konsultasi Sekarang!</a>
   </div>
 </div>
 
 <!-- ABOUT -->
-<section class="about-section">
+<section id="about" class="about-section">
   <div class="about-container">
 
     <!-- TEXT -->
@@ -282,7 +315,7 @@ footer {
 </section>
 
 <!-- LAYANAN -->
-<section class="dark">
+<section id="layanan" class="dark">
   <h2>Layanan Kami</h2>
   <div class="grid">
 
@@ -303,9 +336,66 @@ footer {
 
   </div>
 </section>
+<section id="harga">
+  <h2>Paket Harga</h2>
 
+  <div class="grid">
+
+    <div class="card">
+      <p><b>Live Lite</b></p>
+      <p>Live Streaming Only</p>
+      <p> Studio </p>
+      <p> 2 jam </p>
+      <h3>Rp150.000 (1 sesi live 20k)</h3>
+    </div>
+
+    <div class="card">
+      <p><b>Standard</b></p>
+      <p>Studio + Host + Gadget proper</p>
+      <p> Request Konsep Live <P>
+      <p> 1 Lighting </p>
+      <p>4 Jam Live</p>
+      <h3>Rp300.000 </h3>
+    </div>
+
+    <div class="card">
+      <p><b>Premium</b></p>
+      <p>Studio Premium</p>
+      <p>Host Profesional+Studio Lengkap+ OBS </p>
+      <p>6 Jam Live</p>
+      <h3>Rp600.000</h3>
+    </div>
+<section class="dark">
+  <h2>Cara Kerja</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <p><b>1.</b></p>
+      <p>Konsultasi kebutuhan live streaming</p>
+    </div>
+
+    <div class="card">
+      <p><b>2.</b></p>
+      <p>Pilih paket yang sesuai</p>
+    </div>
+
+    <div class="card">
+      <p><b>3.</b></p>
+      <p>Jadwalkan sesi live</p>
+    </div>
+
+    <div class="card">
+      <p><b>4.</b></p>
+      <p>Produksi dan live streaming</p>
+    </div>
+
+  </div>
+</section>
+  </div>
+</section>
 <!-- PORTOFOLIO -->
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
   <h2>Portofolio</h2>
   <div class="grid">
 
@@ -366,7 +456,7 @@ footer {
   </div>
 </section>
 <!-- KONTAK -->
-<section class="contact">
+<section id="kontak" class="contact">
   <h2>Kontak</h2>
 
   <div class="contact-list">
